@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Code the Change Decal Homework 2</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <div id="hw-header">
+        <h1>Homework 2</h1>
+        <h2>JavaScript and jQuery</h2>
+        <h2>CS 98/198: Code the Change</h2>
+        <h2>Spring 2014</h2>
+        <h2><b>Due</b>: March 23, 2014 6:00PM</h2>
+    </div>
+    <p>These questions are designed to teach you how you can utilize jQuery for your future projects. Note that you can do some of these questions entirely in CSS3, but for the sake of this homework we will be using jQuery. Keep in mind that DOM manipulation is very expensive since the browser needs re-parse parts of the DOM and re-render styles. You want to exhaust HTML5/CSS3 entirely before resorting to any kind of JavaScript manipulation.</p>
+
+    <div class="task" id="task1">
+        <h2>Question #1</h2>
+        <div>
+            <p>JavaScript is not an Object-Oriented Programming Language in the sense that there are no such things as classes, private variables or classical inheritance. Note that in the following instructions, the word class means 'object'. Put all your JS code in index.js</p>
+            <ol>
+                <li>Define a 'Dog' Class</li>
+                <li>Make a 'Dog' prototype method called 'bark' which takes in no parameter and returns 'woof'. All 'Dog' instances should have this method.</li>
+                <li>Define another 'class' called 'ShibaInu' which calls the Dog constructor upon instantiation</li>
+                <li>Have the 'ShibaInu' class inherit from 'Dog' using prototypal inheritance</li>
+                <li>By doing the previous instruction, you've moved the 'ShibaInu' object's pointer. Correct it by making ShibaInu.prototype.constructor point to the original 'ShibaInu' constructor.</li>
+                <li>Make a prototype method from the ShibaInu class called 'bark' which takes in no parameter and returns 'much wow very javascript'</li>
+            </ol>
+            <p>You should now be able to instantiate a ShibaInu object which returns 'much wow very javascript' upon calling myShibaInuObj.bark() Note: You can test your code at <a href="http://repl.it/" target="blank">repl.it</a>. You may also find <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="blank">this</a> useful for JavaScript OOP</p>
+        </div>
+    </div>
+    <hr></hr>
+
+
+    <div class="task" id="task2">
+        <h2>Question #2</h2>
+        <p>Before you're able to complete the other questions, you must import jQuery. Either download jQuery manually
+            or use the Google CDN to import it.</p>
+    </div>
+    <hr></hr>
+  
+    <div class="task" id="task3">
+        <h2>Question #3</h2>
+        <p>Change the text to say what animal you think is the best and the color to turquoise when the button is clicked.</p>
+        <h1 class="secondheading">Shiba Inus are the best!!!</h1>
+        <span class="button secondbutton">Change text</span>
+        <a class="hint" href="http://api.jquery.com/html/">Hint</a>
+    </div>
+    <hr></hr>
+
+    
+    <div class="task" id="task4">
+        <h2>Question #4</h2>
+        <div>
+          <p>This guy doesn't look hipster enough. Change the color of the image and make it slightly blurred to make him more hipster.</p>
+        </div>
+        <div id="hipcat">
+          <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-ash4/t31/s720x720/775025_10200429227912052_1328744066_o.jpg">
+        </div>
+        <div>
+          <span class="button" id="task4">Hipsterfy!</span>
+          <a class="hint" href="http://html5-demos.appspot.com/static/css/filters/index.html">Hint</a>
+        </div>
+    </div>
+    <hr></hr>
+
+    <div class="task">
+        <h2>Question #5</h2>
+        <div class="car">
+          <p>Check out your hot new car. Too bad it doesn't work. Make the wheels spin and test it out for a ride!</p>
+          <div class="spincar">
+            <img id="wheel1" class="wheel" src="http://users.rescomp.berkeley.edu/~carinaboo/workshop/images/wheel.png"/>
+            <img id="wheel2" class="wheel" src="http://users.rescomp.berkeley.edu/~carinaboo/workshop/images/wheel.png"/></div>
+            <span class="button">Spin the wheels and drive</span>
+            <a class="hint" href="http://stackoverflow.com/questions/14859322/css3-spin-animation">Hint</a>
+        </div>
+    </div>
+    <hr></hr>
+
+    <div class="task">
+        <h2>Question #6</h2>
+        <p>Help the Nyancat travel through the Inter-space! It should animate to the right while leaving a trail of rainbow as it moves.</p>
+        
+        <div id="nyan">
+          <div class="rainbows"></div>
+          <img class="nyancat" src="http://users.rescomp.berkeley.edu/~carinaboo/workshop/images/nyan-cat.gif"> 
+      </div>
+       <br><br>
+      <a class="hint" href="http://api.jquery.com/animate/">Hint</a>
+    </div>
+
+
+    <p id="credits"><b>Credits to Carina Boo for questions 3-6!</b></p>
+</body>
+</html>

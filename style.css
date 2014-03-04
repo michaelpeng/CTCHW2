@@ -1,0 +1,137 @@
+#hw-header {
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#credits {
+  text-align: center;
+}
+
+body {
+    font-family: Verdana, Calibri, Helvetica Neue, Helvetica, Arial, Sans-Serif;
+    background-color: white;
+    padding: 0px 100px;
+}
+
+body > div {
+    padding: 30px 20px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.button {
+    display: inline-block;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background: #4A8CF5;
+    padding: 10px 15px;
+    margin: 15px 0;
+    margin-right: 20px;
+    border-radius: 3px;
+    border: 1px solid #3079ED;
+}
+
+.button:hover {
+    background: #3A7EEC;
+}
+
+img { 
+    display: block; 
+}
+
+#firstheading {
+    color: lawngreen;
+}
+
+.secondheading {
+    color: gray;
+}
+
+.pony {
+  width: 400px;
+}
+
+.spincar {
+  position: relative;
+  background-image: url('http://users.rescomp.berkeley.edu/~carinaboo/workshop/images/car.jpg');
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 500px;
+  -webkit-animation-name: drive;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  -webkit-animation-play-state: paused;
+}
+
+.spincar .wheel {
+  width: 80px;
+  position: absolute;
+  top: 55px;
+  /* -webkit-animation-name: spin; */
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-play-state: paused; 
+  /* -play-state might be useful to change */
+}
+
+.spincar #wheel1 {
+  left: 85px;
+}
+
+.spincar #wheel2 {
+  left: 365px;
+}
+
+@-webkit-keyframes drive {
+  from {
+    left:0px;
+  }
+  to {
+    right:-500px;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform:rotate(0deg);
+  }
+  to {
+    -webkit-transform:rotate(360deg);
+  }
+}
+
+#nyan {
+    height: 100px;
+}
+
+.nyancat {
+    height: 100px;
+    width: 140px;
+    position: absolute;
+    left: 120px;
+}
+.rainbows {
+    background-image: url(http://users.rescomp.berkeley.edu/~carinaboo/workshop/images/rainbow.png);
+    height: 100px;
+    width: 40px;
+    position: absolute;
+}
